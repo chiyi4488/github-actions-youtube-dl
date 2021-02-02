@@ -23,3 +23,5 @@
 ## License
 
 [github-actions-youtube-dl](https://github.com/justjavac/github-actions-youtube-dl) is released under the MIT License. See the bundled [LICENSE](./LICENSE) file for details.
+
+
