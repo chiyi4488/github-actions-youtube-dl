@@ -11,14 +11,14 @@ jobs:
 
       - name: download
         run: |
-        #  git config --local user.email "chiyi4869@gmail.com"
-        #  git config --local user.name "chiyi4488"
-         # git remote set-url origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
-         # git pull --rebase
-         # ./bin/youtube-dl --config-location config.txt
-         # git add .
-        # git commit -m "download youtube video"
-          #git push
+          git config --local user.email "chiyi4869@gmail.com"
+          git config --local user.name "chiyi4488"
+          git remote set-url origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          git pull --rebase
+          ./bin/youtube-dl --config-location config.txt
+          git add .
+          git commit -m "download youtube video"
+          git push
       - name: 下載並安裝 rclone
         run: sudo curl https://rclone.org/install.sh | sudo bash
       - name: 解碼 config
